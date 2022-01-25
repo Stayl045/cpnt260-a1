@@ -75,12 +75,25 @@ footer {
   border-radius: 5px;
 }
 
-section {
+/** Article Content**/
+.container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  margin-top: 1rem;
 }
 
+.container-head {
+  color: black;
+  text-align: center;
+  padding: 14px;
+}
+
+.container-body {
+  width: 680px;
+  height: 180px;
+  border: 1px solid black;
+}
 /** Hero **/
 .hero-container {
   height: 50vh;
@@ -93,6 +106,12 @@ section {
   height: 100%;
 }
 
+/** Card Content **/
+.card h2 {
+  color: #fe2730;
+  align-content: center;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -101,6 +120,7 @@ section {
 
 .card {
   background: white;
+  background-color: rgb(62, 62, 62);
   width: 320px;
   height: 530px;
   margin: 10px;
@@ -118,20 +138,20 @@ section {
 }
 
 .mgs-1 {
-  background-image: url(/projects/1-25-22-about-metal-gear-solid/assets/images/mgs-1-art.jpeg);
+  background-image: url(/assets/images/mgs-1-art.jpeg);
   background-size: cover;
 }
 
 .mgs-2 {
-  background-image: url(/projects/1-25-22-about-metal-gear-solid/assets/images/mgs-2-cover-art.png);
+  background-image: url(/assets/images/mgs-2-cover-art.png);
 }
 
 .mgs-3 {
-  background-image: url(/projects/1-25-22-about-metal-gear-solid/assets/images/mgs-3-cover.jpeg);
+  background-image: url(/assets/images/mgs-3-cover.jpeg);
 }
 
 .mgs-4 {
-  background-image: url(/projects/1-25-22-about-metal-gear-solid/assets/images/mgs-4-cover.jpeg);
+  background-image: url(/assets/images/mgs-4-cover.jpeg);
 }
 
 .card:hover {
