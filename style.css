@@ -9,6 +9,7 @@
 }
 
 body {
+  margin: 0;
   padding: 15px;
 }
 
@@ -38,7 +39,7 @@ ul {
 
 strong {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 59px; ;
+  font-size: 59px;
   text-transform: uppercase;
   color: #fe2730;
   flex-wrap: wrap;
@@ -49,7 +50,7 @@ nav a:hover {
 }
 
 nav a:active {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
 }
 
@@ -74,13 +75,19 @@ footer {
   border-radius: 5px;
 }
 
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /** Hero **/
 .hero-container {
   height: 50vh;
   text-transform: capitalize;
 }
 .hero-container img {
-  object-fit: cover; 
+  object-fit: cover;
   object-position: 30% 20%;
   width: 100%;
   height: 100%;
@@ -127,13 +134,9 @@ footer {
   background-image: url(/projects/1-25-22-about-metal-gear-solid/assets/images/mgs-4-cover.jpeg);
 }
 
-
 .card:hover {
   background-color: rgb(62, 62, 62);
   color: white;
   cursor: pointer;
-  transform: scale(1.10);
+  transform: scale(1.1);
 }
-
-
-
