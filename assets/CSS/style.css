@@ -29,6 +29,11 @@ footer {
   border-radius: 5px;
 }
 
+span {
+  color: black;
+  font-weight: 900;
+}
+
 /**********************/
 /*** Navigation Bar ***/
 /**********************/
@@ -55,6 +60,7 @@ ul {
   text-align: center;
   padding: 14px 16px;
 }
+/** padding: 0px; **/
 
 ul a {
   color: white;
@@ -76,6 +82,7 @@ strong {
 
 nav a:hover {
   color: #fe2730;
+  cursor: pointer;
 }
 
 nav a:active {
@@ -100,25 +107,31 @@ nav a:active {
 }
 
 .container-body {
+  display: grid;
+  align-items: center;
   background-color: rgb(62, 62, 62);
-  width: 680px;
+  width: 620px;
   height: 180px;
   border: 1px solid black;
 }
 
+h3.container-head {
+  text-shadow: 3px 3px rgb(62, 62, 62);
+}
+
 p.container-body {
-  flex-wrap: wrap;
   place-items: center;
   padding: 14px;
   color: white;
   text-align: start;
   border-radius: 7px;
+  overflow: scroll;
+  text-overflow: clip;
 }
 
 /** Hero **/
 .hero-container {
   height: 50vh;
-  text-transform: capitalize;
 }
 .hero-container img {
   object-fit: cover;
@@ -156,8 +169,12 @@ p.container-body {
   background-color: #e91c27;
   padding-top: 19px;
   text-align: left;
-  align-items: center;
   place-items: center;
+  border-radius: 7px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .card div p {
@@ -173,16 +190,16 @@ p.container-body {
   margin-bottom: 5px;
   background-size: cover;
   border: 1px solid black;
-  border-bottom: 7px;
 }
 
 .mgs-1 {
   background-image: url("../../assets/images/mgs-1-art.jpeg");
-  background-size: cover;
+  background-size: contain;
 }
 
 .mgs-2 {
   background-image: url("../images/mgs-2-cover-art.png");
+  background-size: contain;
 }
 
 .mgs-3 {
@@ -191,6 +208,7 @@ p.container-body {
 
 .mgs-4 {
   background-image: url("../images/mgs-4-cover.jpeg");
+  background-size: cover;
 }
 
 .card:hover {
@@ -201,4 +219,7 @@ p.container-body {
 }
 
 @media screen and (max-width: 760px) {
+  .container-body {
+    display: none;
+  }
 }
