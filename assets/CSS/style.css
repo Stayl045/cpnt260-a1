@@ -107,13 +107,11 @@ nav a:active {
 }
 
 p.container-body {
-  display: grid;
+  flex-wrap: wrap;
   place-items: center;
   padding: 14px;
   color: white;
   text-align: start;
-  float: left;
-  position: relative;
   border-radius: 7px;
 }
 
@@ -132,14 +130,31 @@ p.container-body {
 /******************/
 /** Card Content **/
 /******************/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 6px;
+}
+
 .card h2 {
   color: white;
   align-content: center;
 }
+.card {
+  background: white;
+  background-color: rgb(62, 62, 62);
+  width: 320px;
+  height: 530px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 7px;
+  text-align: center;
+}
 
 .card div {
   background-color: #e91c27;
-  padding-top: 4px;
+  padding-top: 19px;
   text-align: left;
   align-items: center;
   place-items: center;
@@ -150,24 +165,6 @@ p.container-body {
   font-size: 24px;
   margin-left: 8px;
   padding-bottom: 11px;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border-radius: 6px;
-}
-
-.card {
-  background: white;
-  background-color: rgb(62, 62, 62);
-  width: 320px;
-  height: 530px;
-  margin: 10px;
-  border: 2px solid black;
-  border-radius: 7px;
-  text-align: center;
 }
 
 .card-image {
@@ -201,4 +198,7 @@ p.container-body {
   color: white;
   cursor: pointer;
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 760px) {
 }
